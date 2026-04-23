@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Explore astrology with Mystik – learn about sun signs, zodiac readings, horoscopes, and the cosmic forces that shape your destiny." />
+  <title>Astrology – Mystik Energy Healing & Astrology</title>
+
+  <!-- Google Fonts -->
+  <!-- Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="css/Fonts.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary_text: '#926D34',
+            secondary_text: '#9D967E',
+            cream: '#F2EDD7',
+            cream2: '#EDE8D0',
+            gold: '#C89535',
+            bg_gold: '#ffc367',
+            testi_bg: '#F0EBD8',
+            goldbtn: '#D4A437',
+            goldlight: '#E8C06A',
+            darktext: '#4A3728',
+            browntext: '#6B5533',
+            charcoal: '#2D2B25',
+            charcoal2: '#383530',
+            cardwhite: '#F6F2E8',
+          },
+          fontFamily: {
+            serif: ['Questrial', 'sans-serif'],
+            sans: ['Proza Libre', 'sans-serif'],
+            cinzel: ['Questrial', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* ── Global ── */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .questrial-regular {
+      font-family: "Questrial", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    body {
+      background-color: #F2EDD7;
+      color: #4A3728;
+      font-family: 'Proza Libre', sans-serif;
+    }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #EDE8D0;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #C89535;
+      border-radius: 3px;
+    }
+
+    /* ── Logo stars ── */
+    .logo-star::before {
+      content: '✦';
+      color: #C89535;
+      margin-right: 4px;
+      font-size: 0.7em;
+      vertical-align: middle;
+    }
+
+    .logo-star::after {
+      content: '✦';
+      color: #C89535;
+      margin-left: 4px;
+      font-size: 0.7em;
+      vertical-align: middle;
+    }
+
+    /* ── Nav ── */
+    .nav-link {
+      font-family: 'Proza Libre', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4A3728;
+      transition: color 0.25s;
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #C89535;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #C89535;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-link.active {
+      color: #C89535;
+    }
+
+    /* ── CTA button ── */
+    .btn-begin {
+      background: #D4A437;
+      color: #fff;
+      font-family: 'Proza Libre', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      transition: background 0.25s, transform 0.2s;
+    }
+
+    .btn-begin:hover {
+      background: #C89535;
+      transform: translateY(-1px);
+    }
+
+    /* ── Page Hero (inner page banner) ── */
+    .page-hero {
+      position: relative;
+      width: 100%;
+      height: 380px;
+      background: linear-gradient(135deg, #3a2412 0%, #5c3a1e 35%, #8b5e30 65%, #c89535 100%);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(200, 149, 53, 0.25) 0%, rgba(42, 26, 14, 0.7) 100%);
+    }
+
+    /* star particles */
+    .page-hero::after {
+      content: '✦  ✦  ✦  ✦  ✦  ✦  ✦  ✦  ✦  ✦  ✦  ✦';
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      color: rgba(200, 149, 53, 0.35);
+      text-align: center;
+      font-size: 1.1rem;
+      letter-spacing: 1.4rem;
+    }
+
+    .page-hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    /* ── Section icon ── */
+    .section-icon {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 12px;
+      color: #C89535;
+    }
+
+    /* ── Gold btn ── */
+    .btn-gold {
+      display: inline-block;
+      background: #D4A437;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 14px 32px;
+      transition: background 0.25s, transform 0.2s;
+    }
+
+    .btn-gold:hover {
+      background: #C89535;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline-gold {
+      display: inline-block;
+      border: 2px solid #C89535;
+      color: #C89535;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 12px 30px;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .btn-outline-gold:hover {
+      background: #C89535;
+      color: #fff;
+    }
+
+    /* ── Blog card ── */
+    .blog-card {
+      background: #F6F2E8;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(74, 55, 40, 0.14);
+    }
+
+    .blog-card-img {
+      overflow: hidden;
+      height: 220px;
+    }
+
+    .blog-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .blog-card:hover .blog-card-img img {
+      transform: scale(1.06);
+    }
+
+    /* ── FAQ Accordion ── */
+    .faq-item {
+      border-bottom: 1px solid #D4C9A8;
+    }
+
+    .faq-btn {
+      width: 100%;
+      text-align: left;
+      padding: 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: color 0.2s;
+      font-family: 'Proza Libre', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #4A3728;
+      background: none;
+      border: none;
+    }
+
+    .faq-btn:hover {
+      color: #C89535;
+    }
+
+    .faq-btn.open {
+      color: #C89535;
+    }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border: 1.5px solid #C89535;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s;
+      color: #C89535;
+      font-size: 0.85rem;
+    }
+
+    .faq-btn.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      font-size: 0.85rem;
+      color: #6B5533;
+      line-height: 1.85;
+    }
+
+    .faq-body.open {
+      max-height: 300px;
+      padding-bottom: 18px;
+    }
+
+    /* ── Zodiac Grid ── */
+    .zodiac-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 12px;
+      border: 1px solid rgba(200, 149, 53, 0.18);
+      transition: background 0.25s, border-color 0.25s;
+      cursor: pointer;
+    }
+
+    .zodiac-cell:hover {
+      background: rgba(200, 149, 53, 0.1);
+      border-color: #C89535;
+    }
+
+    .zodiac-cell svg {
+      transition: transform 0.3s;
+    }
+
+    .zodiac-cell:hover svg {
+      transform: scale(1.12);
+    }
+
+    /* ── Testimonial card ── */
+    .testimonial-card {
+      background: #F6F2E8;
+      padding: 40px 32px 32px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+    }
+
+    /* ── Slider nav diamond ── */
+    .slider-btn {
+      width: 52px;
+      height: 52px;
+      border: 2px solid #C89535;
+      transform: rotate(45deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.25s;
+    }
+
+    .slider-btn:hover {
+      background: rgba(200, 149, 53, 0.15);
+    }
+
+    .slider-btn svg {
+      transform: rotate(-45deg);
+      color: #C89535;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: #2D2B25;
+    }
+
+    .footer-title {
+      color: #D4A437;
+      font-family: 'Questrial', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .footer-link {
+      display: block;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #A89880;
+      margin-bottom: 12px;
+      transition: color 0.2s;
+    }
+
+    .footer-link:hover {
+      color: #D4A437;
+    }
+
+    /* ── Back to top ── */
+    .back-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      background: #D4A437;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s;
+    }
+
+    .back-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ── Mobile menu ── */
+    #mobile-menu {
+      transform: translateX(-100%);
+      transition: transform 0.35s ease;
+    }
+
+    #mobile-menu.open {
+      transform: translateX(0);
+    }
+
+    /* ── Scroll animations ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ── Side panel ── */
+    .side-panel {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 50;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .side-btn {
+      width: 48px;
+      height: 48px;
+      background: #D4A437;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      transition: background 0.2s;
+    }
+
+    .side-btn:hover {
+      background: #C89535;
+    }
+
+    .side-btn svg {
+      color: #fff;
+      width: 18px;
+      height: 18px;
+    }
+
+    /* ── Sun icon graphic ── */
+    .sun-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*
+     * FIX: Orbit rings are centered via top/left 50% + translate(-50%,-50%).
+     * This aligns the ring's geometric center with the wrapper's center,
+     * matching the CSS transform-origin (50% 50%) so the rotation is perfectly
+     * concentric. The @keyframes only rotate; the centering translate is kept
+     * separate via a wrapper transform so they don't cancel each other.
+     */
+    .sun-orbit-ring {
+      position: absolute;
+      border: 2px dashed rgba(200, 149, 53, 0.4);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform-origin: center center;
+      animation: rotateRing 30s linear infinite;
+      will-change: transform;
+    }
+
+    @keyframes rotateRing {
+      from {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    .sun-orbit-ring-2 {
+      animation-direction: reverse;
+      animation-duration: 20s;
+    }
+
+    .bg-image {
+      background-image: url("./Images/about-author.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .breadcrumb a {
+      color: rgba(255, 255, 255, 0.75);
+      transition: color 0.2s;
+    }
+
+    .breadcrumb a:hover {
+      color: #E8C06A;
+    }
+
+    .breadcrumb span {
+      color: rgba(255, 255, 255, 0.5);
+      margin: 0 8px;
+    }
+  </style>
+</head>
+
+<body class="bg-cream">
+
+  <!-- ═══════════════════════════════════════ HEADER ═══════════════════════════════════════ -->
+  <header id="header" class="sticky top-0 z-50 bg-cream border-b border-cream2 transition-shadow duration-300">
+    <div class="px-6 flex items-center justify-between h-[88px]">
+
+      <!-- Logo -->
+      <a href="#" class="logo-star font-cinzel font-bold text-2xl tracking-wide text-darktext flex-shrink-0" id="logo">
+        <img src="./Images/Frame 188 (2).png" alt="logo" class="w-24">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+        <a href="index.html" class="nav-link ">Home</a>
+        <a href="#" class="nav-link active">Astrology</a>
+        <a href="appointment.html" class="nav-link ">Appointments</a>
+
+        <!-- Blogs Dropdown -->
+        <div class="relative group">
+          <a href="javascript:void(0)" class="nav-link flex items-center gap-1 cursor-pointer">
+            Blogs
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <!-- Dropdown menu -->
+          <div
+            class="absolute top-full left-0 mt-6 w-48 bg-white shadow-xl opacity-0 invisible translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 border-t-2 border-gold flex flex-col py-2">
+            <a href="blog.html"
+              class="px-5 py-3 text-[0.72rem] font-semibold text-darktext uppercase tracking-widest hover:text-gold hover:bg-cream2 transition-colors"
+              style="font-family: 'Proza Libre', sans-serif;">Blogs</a>
+            <a href="blog-detail.html"
+              class="px-5 py-3 text-[0.72rem] font-semibold text-darktext uppercase tracking-widest hover:text-gold hover:bg-cream2 transition-colors"
+              style="font-family: 'Proza Libre', sans-serif;">Blog Details</a>
+          </div>
+        </div>
+
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <a href="javascript:void(0)" class="nav-link flex items-center gap-1 cursor-pointer">
+            Services
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <!-- Dropdown menu -->
+          <div
+            class="absolute top-full left-0 mt-6 w-48 bg-white shadow-xl opacity-0 invisible translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 border-t-2 border-gold flex flex-col py-2">
+            <a href="services.html"
+              class="px-5 py-3 text-[0.72rem] font-semibold text-darktext uppercase tracking-widest hover:text-gold hover:bg-cream2 transition-colors"
+              style="font-family: 'Proza Libre', sans-serif;">Services</a>
+            <a href="service-detail.html"
+              class="px-5 py-3 text-[0.72rem] font-semibold text-darktext uppercase tracking-widest hover:text-gold hover:bg-cream2 transition-colors"
+              style="font-family: 'Proza Libre', sans-serif;">Service Details</a>
+          </div>
+        </div>
+
+        <a href="testimonials.html" class="nav-link ">Testimonials</a>
+        <a href="contact.html" class="nav-link ">Contact</a>
+      </nav>
+
+      <!-- Phone + CTA -->
+      <div class="hidden lg:flex items-center gap-5">
+        <a href="tel:88005556677"
+          class="flex items-center gap-2 text-darktext hover:text-gold transition-colors duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21L8.5 10.5a11.041 11.041 0 005 5l1.113-1.724a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2C7.716 21 3 16.284 3 5z" />
+          </svg>
+          <span class="text-[0.72rem] font-semibold tracking-wide">8 (800) 555-66-77</span>
+        </a>
+        <a href="#" class="btn-begin whitespace-nowrap" id="begin-btn">Begin Here</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button id="hamburger" class="lg:hidden p-2 text-darktext" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu" class="fixed inset-y-0 left-0 w-72 bg-cream z-[100] shadow-2xl px-8 pt-24 pb-10 lg:hidden">
+    <button id="close-menu" class="absolute top-5 right-5 text-darktext">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <div class="flex flex-col gap-6">
+      <a href="#" class="nav-link text-lg">Home</a>
+      <a href="astrology.html" class="nav-link text-lg">Astrology</a>
+      <a href="appointment.html" class="nav-link text-lg">Appointments</a>
+
+      <!-- Blogs Dropdown Mobile -->
+      <div class="group relative">
+        <a href="javascript:void(0)" class="nav-link text-lg flex items-center justify-between cursor-pointer w-full">
+          Blogs
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+        <div class="flex flex-col pl-4 mt-3 gap-3 hidden group-hover:flex transition-all duration-300">
+          <a href="blog.html" class="nav-link text-sm hover:text-gold transition-colors">Blogs</a>
+          <a href="blog-detail.html" class="nav-link text-sm hover:text-gold transition-colors">Blog Details</a>
+        </div>
+      </div>
+
+      <!-- Services Dropdown Mobile -->
+      <div class="group relative">
+        <a href="javascript:void(0)" class="nav-link text-lg flex items-center justify-between cursor-pointer w-full">
+          Services
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+        <div class="flex flex-col pl-4 mt-3 gap-3 hidden group-hover:flex transition-all duration-300">
+          <a href="services.html" class="nav-link text-sm hover:text-gold transition-colors">Services</a>
+          <a href="service-detail.html" class="nav-link text-sm hover:text-gold transition-colors">Service Details</a>
+        </div>
+      </div>
+
+      <a href="testimonials.html" class="nav-link text-lg">Testimonials</a>
+      <a href="contact.html" class="nav-link text-lg">Contact</a>
+      <a href="tel:88005556677" class="text-gold font-semibold text-sm mt-4">8 (800) 555-66-77</a>
+      <a href="#" class="btn-begin text-center mt-2">Begin Here</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ PAGE HERO ═══════════════════════════════════════ -->
+  <section class="page-hero" aria-label="Astrology page hero">
+    <!-- Decorative celestial SVG -->
+    <svg class="absolute opacity-10" width="500" height="500" viewBox="0 0 500 500" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="250" r="230" stroke="#C89535" stroke-width="1" />
+      <circle cx="250" cy="250" r="180" stroke="#C89535" stroke-width="0.8" />
+      <circle cx="250" cy="250" r="130" stroke="#C89535" stroke-width="0.6" />
+      <polygon points="250,30 460,380 40,380" stroke="#C89535" stroke-width="0.8" fill="none" />
+      <polygon points="250,470 40,120 460,120" stroke="#C89535" stroke-width="0.8" fill="none" />
+    </svg>
+
+    <div class="page-hero-content">
+      <h1 class="text-white questrial-regular text-5xl md:text-7xl mb-4 tracking-wide">Astrology</h1>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="text-white">Astrology</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ WHAT IS ASTROLOGY ═══════════════════════════════════════ -->
+  <section id="what-is-astrology" class="py-24 px-6 bg-cream" aria-label="What is Astrology">
+    <div class="max-w-3xl mx-auto text-center">
+
+      <!-- Diamond icon -->
+      <div class="section-icon reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="60" height="30" fill="none" stroke="#C89535"
+          stroke-width="1.5">
+          <polygon points="15,15 30,2 45,15 30,28" />
+          <polygon points="0,15 15,2 30,15 15,28" />
+          <polygon points="30,15 45,2 60,15 45,28" />
+        </svg>
+      </div>
+
+      <h2 class="font-serif text-4xl md:text-5xl text-primary_text font-light mb-8 reveal leading-snug">
+        What Is Astrology?
+      </h2>
+      <p class="fs-[17px] leading-loose mb-5 reveal text-secondary_text ">
+        Astrology is based on the idea that the position of heavenly bodies at the time of a person's birth can
+        influence their personality, destiny, and future events. This practice, thousands of years old, sees a
+        connection between the cosmos and earthly life, suggesting that celestial movements and positions can reflect or
+        influence the rhythms of our daily existence.
+      </p>
+      <a href="#" class="btn-gold reveal">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SUN SIGN SECTION ═══════════════════════════════════════ -->
+  <section id="sun-sign" class="overflow-hidden bg-image" aria-label="Sun Sign in Astrology">
+    <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-stretch min-h-[560px]">
+
+      <!-- Left: Zodiac Wheel SVG Graphic -->
+      <div class="w-full lg:w-1/2 flex items-center justify-center py-16 px-12 bg-[#EDE8D0] reveal-left">
+        <div class="sun-wrapper w-[340px] h-[340px] md:w-[420px] md:h-[420px]">
+          <!-- Outer rings: sized via CSS width/height; centering handled by the keyframe translate -->
+          <div class="sun-orbit-ring" style="width:320px;height:320px;"></div>
+          <div class="sun-orbit-ring sun-orbit-ring-2" style="width:260px;height:260px;"></div>
+
+          <!-- Zodiac Wheel SVG -->
+          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" fill="none"
+            stroke="#C89535" stroke-width="1">
+            <!-- Outer ring -->
+            <circle cx="200" cy="200" r="190" stroke-width="1.5" />
+            <circle cx="200" cy="200" r="155" />
+            <circle cx="200" cy="200" r="110" />
+            <circle cx="200" cy="200" r="65" />
+            <circle cx="200" cy="200" r="28" fill="rgba(200,149,53,0.15)" stroke-width="1.5" />
+
+            <!-- 12 division lines -->
+            <line x1="200" y1="10" x2="200" y2="390" opacity="0.35" />
+            <line x1="10" y1="200" x2="390" y2="200" opacity="0.35" />
+            <line x1="66" y1="66" x2="334" y2="334" opacity="0.35" />
+            <line x1="334" y1="66" x2="66" y2="334" opacity="0.35" />
+            <line x1="29" y1="130" x2="371" y2="270" opacity="0.3" />
+            <line x1="371" y1="130" x2="29" y2="270" opacity="0.3" />
+            <line x1="130" y1="29" x2="270" y2="371" opacity="0.3" />
+            <line x1="270" y1="29" x2="130" y2="371" opacity="0.3" />
+
+            <!-- Sun center -->
+            <circle cx="200" cy="200" r="18" fill="#C89535" opacity="0.8" />
+            <circle cx="200" cy="200" r="12" fill="#E8C06A" />
+
+            <!-- Sun rays -->
+            <g stroke="#C89535" stroke-width="1.5" opacity="0.7">
+              <line x1="200" y1="175" x2="200" y2="160" />
+              <line x1="200" y1="225" x2="200" y2="240" />
+              <line x1="175" y1="200" x2="160" y2="200" />
+              <line x1="225" y1="200" x2="240" y2="200" />
+              <line x1="182" y1="182" x2="172" y2="172" />
+              <line x1="218" y1="182" x2="228" y2="172" />
+              <line x1="182" y1="218" x2="172" y2="228" />
+              <line x1="218" y1="218" x2="228" y2="228" />
+            </g>
+
+            <!-- Zodiac sign symbols at degree marks -->
+
+          </svg>
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="w-full lg:w-1/2 flex items-center bg-cardwhite reveal-right">
+        <div class="px-10 md:px-16 py-16">
+          <p class="text-gold font-serif text-lg italic mb-3 leading-snug">The Meaning of the Sun Sign in Astrology</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-primary_text font-light leading-snug mb-6">
+            Sun Sign In<br />Astrology?
+          </h2>
+          <p class="fs-[17px] leading-loose mb-5 reveal text-secondary_text">
+            Your Sun sign is determined by the position of the Sun in the zodiac at the time of your birth. It
+            represents your core identity, your ego, and the fundamental qualities that drive your sense of self. When
+            people casually refer to their "star sign," they are usually referring to their Sun sign.
+          </p>
+          <p class="fs-[17px] leading-loose mb-5 reveal text-secondary_text">
+            The Sun moves through each zodiac sign for approximately one month per year, creating twelve distinct solar
+            personality archetypes. While your Sun sign is only one piece of your full astrological profile, it forms a
+            critical foundation for understanding your essential nature and life purpose.
+          </p>
+          <a href="#" class="btn-gold">Schedule Your Session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ ASTROLOGICAL READINGS ═══════════════════════════════════════ -->
+  <section id="readings" class="py-24 px-6 bg-cream" aria-label="Astrological Readings">
+    <div class="max-w-screen-xl mx-auto">
+
+      <!-- Header -->
+      <div class="section-icon reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="60" height="30" fill="none" stroke="#C89535"
+          stroke-width="1.5">
+          <polygon points="15,15 30,2 45,15 30,28" />
+          <polygon points="0,15 15,2 30,15 15,28" />
+          <polygon points="30,15 45,2 60,15 45,28" />
+        </svg>
+      </div>
+      <h2 class="font-serif text-4xl md:text-5xl text-primary_text font-light mb-8 reveal text-center">Astrological
+        Readings
+      </h2>
+      <p class="fs-[17px] leading-loose mb-5 reveal text-secondary_text text-center reveal leading-relaxed">
+        Explore our curated collection of astrological insights, tarot guidance, and cosmic wisdom.
+      </p>
+
+      <!-- 3-column blog card grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <article class="blog-card reveal" style="transition-delay:0s">
+          <div class="blog-card-img">
+            <!-- SVG placeholder -->
+            <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+              <rect width="480" height="220" fill="#3a2412" />
+              <circle cx="240" cy="110" r="80" fill="none" stroke="#C89535" stroke-width="1" opacity="0.4" />
+              <circle cx="240" cy="110" r="55" fill="none" stroke="#C89535" stroke-width="0.8" opacity="0.3" />
+              <text x="240" y="100" text-anchor="middle" fill="#C89535" font-size="40" opacity="0.6"
+                font-family="serif">♠</text>
+              <text x="240" y="130" text-anchor="middle" fill="rgba(200,149,53,0.5)" font-size="11"
+                letter-spacing="3">ACE · TAROT</text>
+              <circle cx="60" cy="30" r="15" fill="rgba(200,149,53,0.1)" stroke="#C89535" stroke-width="0.6" />
+              <circle cx="420" cy="190" r="25" fill="rgba(200,149,53,0.08)" stroke="#C89535" stroke-width="0.6" />
+            </svg>
+          </div>
+          <div class="p-6">
+            <p class="text-[0.68rem] text-browntext uppercase tracking-widest mb-2">Tarot · Mar 25, 2019</p>
+            <h3
+              class="font-serif text-xl text-darktext font-semibold mb-3 leading-snug hover:text-gold transition-colors">
+              <a href="#">Ace Cards in Tarot</a>
+            </h3>
+            <p class="leading-relaxed mb-4">Ace cards in tarot are powerful symbols of new
+              beginnings, raw potential, and the pure essence of their respective suits.</p>
+            <a href="#"
+              class="text-gold text-xs font-bold uppercase tracking-widest hover:text-darktext transition-colors">Read
+              More →</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="blog-card reveal" style="transition-delay:0.1s">
+          <div class="blog-card-img">
+            <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+              <defs>
+                <radialGradient id="bg2" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#5c3a1e" />
+                  <stop offset="100%" stop-color="#2a1a0e" />
+                </radialGradient>
+              </defs>
+              <rect width="480" height="220" fill="url(#bg2)" />
+              <circle cx="240" cy="110" r="90" fill="none" stroke="#C89535" stroke-width="0.8" opacity="0.35" />
+              <text x="240" y="120" text-anchor="middle" fill="#C89535" font-size="52" opacity="0.55"
+                font-family="serif">♓</text>
+              <text x="240" y="148" text-anchor="middle" fill="rgba(200,149,53,0.5)" font-size="11"
+                letter-spacing="3">NATAL · CHART</text>
+              <line x1="60" y1="0" x2="420" y2="220" stroke="#C89535" stroke-width="0.4" opacity="0.2" />
+              <line x1="0" y1="110" x2="480" y2="110" stroke="#C89535" stroke-width="0.4" opacity="0.2" />
+            </svg>
+          </div>
+          <div class="p-6">
+            <p class="text-[0.68rem] text-browntext uppercase tracking-widest mb-2">Astrology · Apr 10, 2019</p>
+            <h3
+              class="font-serif text-xl text-darktext font-semibold mb-3 leading-snug hover:text-gold transition-colors">
+              <a href="#">Reading Your Natal Chart</a>
+            </h3>
+            <p class=" leading-relaxed mb-4">Your natal chart is a snapshot of the sky at the
+              moment of your birth, and it holds profound clues about your soul's journey.</p>
+            <a href="#"
+              class="text-gold text-xs font-bold uppercase tracking-widest hover:text-darktext transition-colors">Read
+              More →</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="blog-card reveal" style="transition-delay:0.2s">
+          <div class="blog-card-img">
+            <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+              <rect width="480" height="220" fill="#1e1206" />
+              <polygon points="240,30 340,180 140,180" fill="none" stroke="#C89535" stroke-width="1" opacity="0.5" />
+              <polygon points="240,190 340,40 140,40" fill="none" stroke="#C89535" stroke-width="1" opacity="0.5" />
+              <circle cx="240" cy="110" r="40" fill="rgba(200,149,53,0.12)" stroke="#C89535" stroke-width="0.8" />
+              <text x="240" y="120" text-anchor="middle" fill="#C89535" font-size="30" opacity="0.7"
+                font-family="serif">☿</text>
+              <text x="240" y="148" text-anchor="middle" fill="rgba(200,149,53,0.45)" font-size="11"
+                letter-spacing="3">MERCURY · RX</text>
+            </svg>
+          </div>
+          <div class="p-6">
+            <p class="text-[0.68rem] text-browntext uppercase tracking-widest mb-2">Planets · May 5, 2019</p>
+            <h3
+              class="font-serif text-xl text-darktext font-semibold mb-3 leading-snug hover:text-gold transition-colors">
+              <a href="#">Mercury Retrograde Guide</a>
+            </h3>
+            <p class="leading-relaxed mb-4">Mercury retrograde is one of the most widely
+              discussed astrological events—but what does it actually mean for your life?</p>
+            <a href="#"
+              class="text-gold text-xs font-bold uppercase tracking-widest hover:text-darktext transition-colors">Read
+              More →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FAQs ═══════════════════════════════════════ -->
+  <section id="faqs" class="py-24 px-6 bg-cream2" aria-label="Frequently Asked Questions">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+      <!-- Left: intro -->
+      <div class="reveal-left">
+        <div class="mb-5 text-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="50" height="24" fill="none"
+            stroke="#C89535" stroke-width="1.5">
+            <polygon points="15,15 30,2 45,15 30,28" />
+            <polygon points="0,15 15,2 30,15 15,28" />
+            <polygon points="30,15 45,2 60,15 45,28" />
+          </svg>
+        </div>
+        <h2 class="font-serif text-4xl md:text-5xl text-darktext font-light leading-snug mb-6">FAQs</h2>
+        <p class="leading-loose mb-6">
+          Have questions about astrology and how it can illuminate your path? Browse our most frequently asked
+          questions. If you don't find what you're looking for, feel free to reach out directly.
+        </p>
+        <p class="leading-loose">
+          Astrology is a vast and intricate system. Whether you're a complete beginner or an experienced sky-watcher,
+          there's always more to discover about yourself through the cosmos.
+        </p>
+      </div>
+
+      <!-- Right: Accordion -->
+      <div class="reveal-right">
+        <!-- Item 1 -->
+        <div class="faq-item">
+          <button class="faq-btn open" id="faq-btn-1" aria-expanded="true" aria-controls="faq-body-1">
+            Which Sun sign am I?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body open" id="faq-body-1">
+            Your Sun sign is determined by the position of the Sun at the time and date of your birth. Each sign spans
+            roughly 30 days of the year. If you were born on a cusp day (the transition between two signs), your exact
+            birth time and location are needed to determine your precise Sun sign using a birth chart calculator.
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="faq-item">
+          <button class="faq-btn" id="faq-btn-2" aria-expanded="false" aria-controls="faq-body-2">
+            What is the difference between Western and Vedic astrology?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body" id="faq-body-2">
+            Western astrology uses the Tropical zodiac, which is aligned with the seasons and the Earth's relationship
+            to the Sun. Vedic (or Jyotish) astrology uses the Sidereal zodiac, based on the actual positions of the
+            constellations. This means your Sun sign may differ by one sign between the two systems.
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="faq-item">
+          <button class="faq-btn" id="faq-btn-3" aria-expanded="false" aria-controls="faq-body-3">
+            Can astrology predict my future?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body" id="faq-body-3">
+            Astrology doesn't predict the future in fixed terms; rather, it reveals cycles, tendencies, and energetic
+            themes that may influence your experience. It is a tool for self-awareness and timing—helping you understand
+            the best moments to act, rest, reflect, or initiate change.
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="faq-item">
+          <button class="faq-btn" id="faq-btn-4" aria-expanded="false" aria-controls="faq-body-4">
+            What is a birth chart and what does it include?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body" id="faq-body-4">
+            A birth chart (or natal chart) is a map of the sky at the exact moment of your birth. It includes the
+            positions of the Sun, Moon, and all planets in the zodiac signs and houses, along with the aspects (angles)
+            they form to each other. It is your personal cosmic blueprint.
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="faq-item">
+          <button class="faq-btn" id="faq-btn-5" aria-expanded="false" aria-controls="faq-body-5">
+            How often should I get an astrology reading?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body" id="faq-body-5">
+            Many people find an annual reading valuable for reviewing the major astrological themes of the upcoming
+            year. Others seek readings during significant life transitions or when navigating challenging periods. Solar
+            return readings (around your birthday) are also a popular yearly check-in.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ ZODIAC SIGNS ═══════════════════════════════════════ -->
+  <section id="zodiac" class="py-24 px-6 bg-cream" aria-label="What's Your Sign">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
+
+      <!-- Left: Zodiac Grid (3 cols × 4 rows = 12 signs) -->
+      <div class="lg:col-span-3 reveal-left h-full">
+        <div class="grid grid-cols-3 sm:grid-cols-4 h-full gap-0 border border-[rgba(200,149,53,0.2)]">
+
+          <!-- Aries -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <path d="M25 10 Q15 10 15 22 Q15 32 25 32 Q35 32 35 22 Q35 10 25 10Z" />
+              <path d="M25 10 Q20 5 18 2" />
+              <path d="M25 10 Q30 5 32 2" />
+              <line x1="25" y1="32" x2="25" y2="46" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Aries</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">Mar 21 – Apr 19</span>
+          </div>
+
+          <!-- Taurus -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <circle cx="25" cy="28" r="14" />
+              <path d="M11 22 Q11 10 25 10 Q39 10 39 22" />
+              <path d="M11 22 Q5 18 3 14" />
+              <path d="M39 22 Q45 18 47 14" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Taurus</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">Apr 20 – May 20</span>
+          </div>
+
+          <!-- Gemini -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <line x1="18" y1="8" x2="18" y2="42" />
+              <line x1="32" y1="8" x2="32" y2="42" />
+              <line x1="11" y1="8" x2="39" y2="8" />
+              <line x1="11" y1="42" x2="39" y2="42" />
+              <line x1="14" y1="25" x2="36" y2="25" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Gemini</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">May 21 – Jun 20</span>
+          </div>
+
+          <!-- Cancer -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <path d="M10 22 Q10 14 18 14 Q26 14 26 22 Q26 30 34 30 Q42 30 42 22" />
+              <circle cx="10" cy="25" r="4" />
+              <circle cx="42" cy="19" r="4" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Cancer</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">Jun 21 – Jul 22</span>
+          </div>
+
+          <!-- Leo -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <circle cx="18" cy="20" r="10" />
+              <path d="M28 20 Q34 20 36 28 Q38 36 32 38 Q26 40 24 36" />
+              <line x1="18" y1="10" x2="18" y2="4" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Leo</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">Jul 23 – Aug 22</span>
+          </div>
+
+          <!-- Virgo -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <line x1="14" y1="8" x2="14" y2="36" />
+              <line x1="25" y1="8" x2="25" y2="36" />
+              <path d="M14 20 Q14 12 25 12 Q30 12 30 20" />
+              <path d="M25 20 Q25 12 36 12 Q41 12 41 20" />
+              <path d="M36 36 Q38 40 35 44 Q32 46 30 44" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Virgo</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">Aug 23 – Sep 22</span>
+          </div>
+
+          <!-- Libra -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <line x1="8" y1="38" x2="42" y2="38" />
+              <line x1="25" y1="38" x2="25" y2="26" />
+              <path d="M12 26 Q25 14 38 26" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Libra</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">Sep 23 – Oct 22</span>
+          </div>
+
+          <!-- Scorpio -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <line x1="10" y1="8" x2="10" y2="36" />
+              <line x1="22" y1="8" x2="22" y2="36" />
+              <path d="M10 20 Q10 12 22 12 Q28 12 28 20" />
+              <path d="M22 20 Q22 12 34 12 Q40 12 40 20" />
+              <path d="M34 36 L40 36 L40 44 L44 40" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Scorpio</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">Oct 23 – Nov 21</span>
+          </div>
+
+          <!-- Sagittarius -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <line x1="12" y1="38" x2="38" y2="12" />
+              <polyline points="26,12 38,12 38,24" />
+              <line x1="10" y1="24" x2="26" y2="40" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Sagittarius</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">Nov 22 – Dec 21</span>
+          </div>
+
+          <!-- Capricorn -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <path d="M8 8 Q8 22 18 24 Q28 26 28 36 Q28 44 36 44" />
+              <path d="M18 24 Q12 30 12 38 Q12 44 18 44" />
+              <path d="M28 26 Q38 22 42 30" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Capricorn</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">Dec 22 – Jan 19</span>
+          </div>
+
+          <!-- Aquarius -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <path d="M8 20 Q14 14 20 20 Q26 26 32 20 Q38 14 44 20" />
+              <path d="M8 30 Q14 24 20 30 Q26 36 32 30 Q38 24 44 30" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Aquarius</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">Jan 20 – Feb 18</span>
+          </div>
+
+          <!-- Pisces -->
+          <div class="zodiac-cell">
+            <svg viewBox="0 0 50 50" width="36" height="36" fill="none" stroke="#C89535" stroke-width="1.5">
+              <path d="M14 10 Q8 25 14 40" />
+              <path d="M36 10 Q42 25 36 40" />
+              <line x1="11" y1="25" x2="39" y2="25" />
+            </svg>
+            <span class="font-serif text-darktext text-md font-semibold mt-2">Pisces</span>
+            <span class="text-browntext text-[0.65rem] mt-0.5">Feb 19 – Mar 20</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right: Text content -->
+      <div class="lg:col-span-2 reveal-right">
+        <div class="mb-5 text-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="50" height="24" fill="none"
+            stroke="#C89535" stroke-width="1.5">
+            <polygon points="15,15 30,2 45,15 30,28" />
+            <polygon points="0,15 15,2 30,15 15,28" />
+            <polygon points="30,15 45,2 60,15 45,28" />
+          </svg>
+        </div>
+        <h2 class="font-serif text-4xl md:text-5xl text-primary_text font-light mb-8 reveal ">
+          What's Your Sign? Read Your Daily Horoscope Today
+        </h2>
+        <p class=" leading-loose mb-5">
+          Each of the 12 zodiac signs carries its own unique energy, archetype, and set of qualities. Understanding your
+          sign—and the signs of those around you—can offer profound insights into personality, relationship dynamics,
+          and life patterns.
+        </p>
+        <p class=" leading-loose mb-8">
+          From the bold fire of Aries to the deep intuition of Pisces, each sign reflects a different facet of the human
+          experience. Explore your sign below and discover what the stars say about you today.
+        </p>
+        <a href="#" class="btn-gold">View All Horoscopes</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ TESTIMONIALS ═══════════════════════════════════════ -->
+  <section id="testimonials" class="py-24 px-6 bg-cream2" aria-label="Testimonials">
+    <div class="max-w-screen-xl mx-auto">
+
+      <!-- Section header -->
+      <div class="section-icon reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="60" height="30" fill="none" stroke="#C89535"
+          stroke-width="1.5">
+          <polygon points="15,15 30,2 45,15 30,28" />
+          <polygon points="0,15 15,2 30,15 15,28" />
+          <polygon points="30,15 45,2 60,15 45,28" />
+        </svg>
+      </div>
+      <h2 class="font-serif text-4xl md:text-5xl text-primary_text font-light mb-8 reveal text-center">Testimonials</h2>
+
+      <!-- Slider wrapper -->
+      <div class="relative overflow-hidden" id="testimonial-slider">
+        <div class="flex transition-transform duration-500 ease-in-out" id="testimonial-track">
+
+          <!-- Slide group 1 -->
+          <div class="min-w-full grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="testimonial-card reveal">
+              <div class="text-gold text-4xl font-serif mb-6 leading-none">"</div>
+              <p class="text-browntext text-sm leading-loose mb-8 italic">As an experienced astrologer myself, I've
+                looked at my chart many times, but Alice gave me a brand-new perspective on the problem areas. Moreover
+                she did this with great insight, delicacy and clarity. I am very grateful for that.</p>
+              <img src="./Images/testimonial_avery.png" alt="Avery Mia"
+                class="w-16 h-16 rounded-full object-cover mx-auto mb-3 border-2 border-gold/30" />
+              <p class="font-serif text-darktext text-lg">Avery Mia</p>
+              <p class="text-browntext text-xs tracking-widest uppercase mt-1">Los Angeles</p>
+            </div>
+
+            <div class="testimonial-card reveal" style="transition-delay:0.1s">
+              <div class="text-gold text-4xl font-serif mb-6 leading-none">"</div>
+              <p class="text-browntext text-sm leading-loose mb-8 italic">I came to consultation, because I was puzzled
+                with current life situation and Alice gave me clear ways to develop, and a plan of how to move ahead to
+                avoid further problems. Some things she said became a much-needed insight for me.</p>
+              <img src="./Images/testimonial_clara.png" alt="Clara Jenkins"
+                class="w-16 h-16 rounded-full object-cover mx-auto mb-3 border-2 border-gold/30" />
+              <p class="font-serif text-darktext text-lg">Clara Jenkins</p>
+              <p class="text-browntext text-xs tracking-widest uppercase mt-1">Paris</p>
+            </div>
+
+            <div class="testimonial-card reveal" style="transition-delay:0.2s">
+              <div class="text-gold text-4xl font-serif mb-6 leading-none">"</div>
+              <p class="text-browntext text-sm leading-loose mb-8 italic">I came to Alice because I had some problems in
+                private life. She created my personal horoscope and interpreted my natal chart concerning the issues I
+                worried about. Sometimes it is important to know that all your problems can be solved.</p>
+              <img src="./Images/testimonial_jenna.png" alt="Jenna Mackenzie"
+                class="w-16 h-16 rounded-full object-cover mx-auto mb-3 border-2 border-gold/30" />
+              <p class="font-serif text-darktext text-lg">Jenna Mackenzie</p>
+              <p class="text-browntext text-xs tracking-widest uppercase mt-1">Milan</p>
+            </div>
+          </div>
+
+          <!-- Slide group 2 -->
+          <div class="min-w-full grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="testimonial-card">
+              <div class="text-gold text-4xl font-serif mb-6 leading-none">"</div>
+              <p class="text-browntext text-sm leading-loose mb-8 italic">The healing session was truly
+                transformational. I felt a deep sense of peace and clarity after just one appointment. I would highly
+                recommend Liz's astrology readings to anyone seeking direction and cosmic balance.</p>
+              <img src="./Images/testimonial_jenna.png" alt="Jenna Mackenzie"
+                class="w-16 h-16 rounded-full object-cover mx-auto mb-3 border-2 border-gold/30" />
+              <p class="font-serif text-darktext text-lg">Jenna Mackenzie</p>
+              <p class="text-browntext text-xs tracking-widest uppercase mt-1">Milan</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="text-gold text-4xl font-serif mb-6 leading-none">"</div>
+              <p class="text-browntext text-sm leading-loose mb-8 italic">Avery's energy work helped me finally overcome
+                a blockage I'd been carrying for years. The process was gentle, thorough, and so insightful. I feel more
+                like myself than I have in a long time.</p>
+              <img src="./Images/testimonial_avery.png" alt="Avery Mia"
+                class="w-16 h-16 rounded-full object-cover mx-auto mb-3 border-2 border-gold/30" />
+              <p class="font-serif text-darktext text-lg">Avery Mia</p>
+              <p class="text-browntext text-xs tracking-widest uppercase mt-1">Los Angeles</p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="text-gold text-4xl font-serif mb-6 leading-none">"</div>
+              <p class="text-browntext text-sm leading-loose mb-8 italic">I initially came in very skeptically, but the
+                experience changed my perspective completely. Clara's reading resonated on a profound level and answered
+                the very questions I hadn't spoken aloud. Remarkable work.</p>
+              <img src="./Images/testimonial_clara.png" alt="Clara Jenkins"
+                class="w-16 h-16 rounded-full object-cover mx-auto mb-3 border-2 border-gold/30" />
+              <p class="font-serif text-darktext text-lg">Clara Jenkins</p>
+              <p class="text-browntext text-xs tracking-widest uppercase mt-1">Paris</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Navigation diamonds -->
+      <div class="flex items-center justify-center gap-16 mt-12">
+        <button class="slider-btn" id="prev-slide" aria-label="Previous testimonials">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="slider-btn" id="next-slide" aria-label="Next testimonials">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+  <footer id="footer" class="py-16 px-6" aria-label="Footer">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10">
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="astrology.html" class="footer-link">Astrology</a>
+        <a href="#" class="footer-link">Events</a>
+        <a href="#" class="footer-link">Magic</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+
+      <!-- Astrological Services -->
+      <div>
+        <h4 class="footer-title">Our Services</h4>
+        <a href="#" class="footer-link">Birth Chart Reading</a>
+        <a href="#" class="footer-link">Compatibility Report</a>
+        <a href="#" class="footer-link">Solar Return</a>
+        <a href="#" class="footer-link">Karmic Reports</a>
+        <a href="#" class="footer-link">Transit Reading</a>
+      </div>
+
+      <!-- Follow Us -->
+      <div>
+        <h4 class="footer-title">Follow Us</h4>
+        <a href="#" class="footer-link">Facebook</a>
+        <a href="#" class="footer-link">X</a>
+        <a href="#" class="footer-link">Instagram</a>
+        <a href="#" class="footer-link">YouTube</a>
+      </div>
+
+      <!-- Contact Us -->
+      <div>
+        <h4 class="footer-title">Contact Us</h4>
+        <div class="flex items-center gap-3 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold flex-shrink-0" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <a href="mailto:info@mystik.com" class="footer-link !mb-0">info@mystik.com</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold flex-shrink-0" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21L8.5 10.5a11.041 11.041 0 005 5l1.113-1.724a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2C7.716 21 3 16.284 3 5z" />
+          </svg>
+          <span class="footer-link !mb-0">8 (800) 555-66-77</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright bar -->
+    <div class="mt-12 pt-6 border-t border-white/10 text-center">
+      <p class="text-xs text-[#A89880]">
+        <span class="text-gold font-semibold">Pragma Infotech</span> © 2026. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════ SIDE PANEL ═══════════════════════════════════════ -->
+  <div class="side-panel hidden lg:flex" aria-label="Quick actions">
+    <div class="side-btn" title="Cart">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <path d="M16 10a4 4 0 01-8 0" />
+      </svg>
+    </div>
+    <div class="side-btn" title="Wishlist">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path
+          d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+      </svg>
+    </div>
+    <div class="side-btn" title="Search">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ BACK TO TOP ═══════════════════════════════════════ -->
+  <button class="back-top" id="back-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- ═══════════════════════════════════════ JAVASCRIPT ═══════════════════════════════════════ -->
+  <script>
+    // ─── Mobile Menu ───────────────────────────────────
+    const ham = document.getElementById('hamburger');
+    const mMenu = document.getElementById('mobile-menu');
+    const closeM = document.getElementById('close-menu');
+    ham.addEventListener('click', () => mMenu.classList.add('open'));
+    closeM.addEventListener('click', () => mMenu.classList.remove('open'));
+    mMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mMenu.classList.remove('open')));
+
+    // ─── Header scroll shadow ──────────────────────────
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('shadow-md', window.scrollY > 20);
+    });
+
+    // ─── Back to top ───────────────────────────────────
+    const backTop = document.getElementById('back-top');
+    window.addEventListener('scroll', () => {
+      backTop.classList.toggle('visible', window.scrollY > 400);
+    });
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // ─── Scroll reveal ─────────────────────────────────
+    function observeElements(selector, threshold = 0.12) {
+      const els = document.querySelectorAll(selector);
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+        });
+      }, { threshold });
+      els.forEach(el => obs.observe(el));
+    }
+    observeElements('.reveal');
+    observeElements('.reveal-left');
+    observeElements('.reveal-right');
+
+    // ─── FAQ Accordion ─────────────────────────────────
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isOpen = btn.classList.contains('open');
+        // close all
+        document.querySelectorAll('.faq-btn').forEach(b => {
+          b.classList.remove('open');
+          b.setAttribute('aria-expanded', 'false');
+        });
+        document.querySelectorAll('.faq-body').forEach(b => b.classList.remove('open'));
+        // open clicked if it was closed
+        if (!isOpen) {
+          btn.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          const bodyId = btn.getAttribute('aria-controls');
+          document.getElementById(bodyId).classList.add('open');
+        }
+      });
+    });
+
+    // ─── Testimonial slider ────────────────────────────
+    const track = document.getElementById('testimonial-track');
+    const prevBtn = document.getElementById('prev-slide');
+    const nextBtn = document.getElementById('next-slide');
+    const totalSlides = 2;
+    let currentSlide = 0;
+
+    function goToSlide(idx) {
+      currentSlide = (idx + totalSlides) % totalSlides;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+    nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+    prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+    setInterval(() => goToSlide(currentSlide + 1), 6000);
+  </script>
+
+</body>
+
+</html>

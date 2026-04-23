@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Matrix Energetics — a powerful healing system that uses quantum principles to collapse limiting patterns and open new possibilities. Book your session with Mystik today."/>
+  <title>Matrix Energetics – Mystik Services</title>
+  
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{cream:'#F2EDD7',cream2:'#EDE8D0',gold:'#C89535',goldbtn:'#D4A437',goldlight:'#E8C06A',darktext:'#4A3728',browntext:'#6B5533',charcoal:'#2D2B25',charcoal2:'#383530',cardwhite:'#F6F2E8'},fontFamily: { serif: ['Questrial', 'sans-serif'], sans: ['Proza Libre', 'sans-serif'], cinzel: ['Questrial', 'sans-serif'] }}}}</script>
+  <style>
+    html{scroll-behavior:smooth}.questrial-regular{font-family:"Questrial",sans-serif;font-weight:400}
+    body{background-color:#F2EDD7;color:#4A3728;font-family: 'Proza Libre', sans-serif}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#EDE8D0}::-webkit-scrollbar-thumb{background:#C89535;border-radius:3px}
+    .logo-star::before{content:'✦';color:#C89535;margin-right:4px;font-size:.7em;vertical-align:middle}.logo-star::after{content:'✦';color:#C89535;margin-left:4px;font-size:.7em;vertical-align:middle}
+    .nav-link{font-family: 'Proza Libre', sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#4A3728;transition:color .25s;position:relative}
+    .nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1px;background:#C89535;transition:width .3s ease}.nav-link:hover{color:#C89535}.nav-link:hover::after{width:100%}
+    .btn-begin{background:#D4A437;color:#fff;font-family: 'Proza Libre', sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:12px 24px;transition:background .25s,transform .2s}.btn-begin:hover{background:#C89535;transform:translateY(-1px)}
+    /* Service hero */
+    .svc-hero{position:relative;width:100%;height:420px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-direction:column;
+      background:linear-gradient(135deg,#1a0c06 0%,#3e2212 35%,#6e4220 70%,#a87028 100%)}
+    .svc-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(200,149,53,.22) 0%,rgba(8,4,1,.65) 100%)}
+    .svc-hero-content{position:relative;z-index:2;text-align:center}
+    .breadcrumb{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}.breadcrumb a{color:rgba(255,255,255,.7);transition:color .2s}.breadcrumb a:hover{color:#E8C06A}.breadcrumb span{color:rgba(255,255,255,.45);margin:0 8px}
+    .section-icon{display:flex;justify-content:center;margin-bottom:12px;color:#C89535}
+    /* Content prose */
+    .prose p{color:#6B5533;font-size:.875rem;line-height:1.9;margin-bottom:1.2rem}
+    .prose h2{font-family: 'Questrial', sans-serif;font-size:1.7rem;font-weight:600;color:#4A3728;margin:2.5rem 0 .9rem;line-height:1.3}
+    .prose ul{list-style:none;margin:1rem 0;padding:0;display:flex;flex-direction:column;gap:.55rem}
+    .prose ul li{color:#6B5533;font-size:.875rem;line-height:1.7;padding-left:1.4rem;position:relative}
+    .prose ul li::before{content:'✦';color:#C89535;position:absolute;left:0;font-size:.65rem;top:.3rem}
+    /* Feature boxes */
+    .feature-box{background:#F6F2E8;padding:28px;display:flex;gap:18px;align-items:flex-start;transition:transform .3s,box-shadow .3s}
+    .feature-box:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(74,55,40,.12)}
+    .feature-icon{width:44px;height:44px;background:#D4A437;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .feature-icon svg{color:#fff;width:20px;height:20px}
+    /* Before/After */
+    .ba-col{padding:28px;border:1px solid #D4C9A8}
+    .ba-col.before{background:#F6F2E8}.ba-col.after{background:linear-gradient(135deg,#3a2412,#5c3a1e)}
+    /* Testimonial mini */
+    .mini-card{background:#F6F2E8;padding:28px 24px;transition:transform .3s}.mini-card:hover{transform:translateY(-4px)}
+    /* Pricing card */
+    .price-card{background:#F6F2E8;padding:40px 32px;text-align:center;border:1px solid #D4C9A8;transition:all .3s}
+    .price-card:hover,.price-card.featured{background:#2D2B25;border-color:#C89535}
+    .price-card:hover h3,.price-card.featured h3{color:#E8C06A}
+    .price-card:hover p,.price-card.featured p{color:#D4C9A8}
+    .price-card:hover .price-amt,.price-card.featured .price-amt{color:#D4A437}
+    .price-card.featured{transform:translateY(-6px)}
+    /* Sidebar */
+    .sidebar-widget{background:#F6F2E8;padding:28px;margin-bottom:20px}
+    /* CTA Banner */
+    .cta-banner{position:relative;background:linear-gradient(135deg,#2a1a0e 0%,#5c3a1e 50%,#2a1a0e 100%);overflow:hidden}
+    .cta-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(200,149,53,.18) 0%,transparent 70%)}
+    .cta-content{position:relative;z-index:2}
+    footer{background:#2D2B25}.footer-title{color:#D4A437;font-family: 'Questrial', sans-serif;font-size:1.25rem;font-weight:600;margin-bottom:24px}
+    .footer-link{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#A89880;margin-bottom:12px;transition:color .2s}.footer-link:hover{color:#D4A437}
+    .back-top{position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:#D4A437;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:999;opacity:0;pointer-events:none;transition:opacity .35s}.back-top.visible{opacity:1;pointer-events:auto}
+    #mobile-menu{transform:translateX(-100%);transition:transform .35s ease}#mobile-menu.open{transform:translateX(0)}
+    .reveal{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}.reveal-left.visible{opacity:1;transform:translateX(0)}
+    .reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s ease,transform .7s ease}.reveal-right.visible{opacity:1;transform:translateX(0)}
+    .side-panel{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:50;display:flex;flex-direction:column}.side-btn{width:48px;height:48px;background:#D4A437;display:flex;align-items:center;justify-content:center;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.2);transition:background .2s}.side-btn:hover{background:#C89535}.side-btn svg{color:#fff;width:18px;height:18px}
+  </style>
+</head>
+<body class="bg-cream">
+
+  <!-- HEADER -->
+  <header id="header" class="sticky top-0 z-50 bg-cream border-b border-cream2 transition-shadow duration-300">
+    <div class="max-w-screen-xl mx-auto px-6 flex items-center justify-between h-[68px]">
+      <a href="index.html" class="logo-star font-cinzel font-bold text-2xl tracking-wide text-darktext flex-shrink-0">mystik</a>
+      <nav class="hidden lg:flex items-center gap-7">
+        <a href="index.html" class="nav-link">Home</a><a href="astrology.html" class="nav-link">Astrology</a><a href="appointment.html" class="nav-link">Attend</a><a href="#" class="nav-link active">Magic</a><a href="#" class="nav-link">Events</a><a href="testimonials.html" class="nav-link">Tarotscopes</a><a href="services.html" class="nav-link">Pages</a><a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="hidden lg:flex items-center gap-5">
+        <a href="tel:88005556677" class="flex items-center gap-2 text-darktext hover:text-gold transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21L8.5 10.5a11.041 11.041 0 005 5l1.113-1.724a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2C7.716 21 3 16.284 3 5z"/></svg><span class="text-[0.72rem] font-semibold tracking-wide">8 (800) 555-66-77</span></a>
+        <a href="appointment.html" class="btn-begin">Book Now</a>
+      </div>
+      <button id="hamburger" class="lg:hidden p-2 text-darktext"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </header>
+  <div id="mobile-menu" class="fixed inset-y-0 left-0 w-72 bg-cream z-[100] shadow-2xl px-8 pt-24 pb-10 lg:hidden">
+    <button id="close-menu" class="absolute top-5 right-5 text-darktext"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg></button>
+    <div class="flex flex-col gap-6">
+      <a href="index.html" class="nav-link text-lg">Home</a><a href="astrology.html" class="nav-link text-lg">Astrology</a><a href="appointment.html" class="nav-link text-lg">Attend</a><a href="#" class="nav-link text-lg">Magic</a><a href="#" class="nav-link text-lg">Events</a><a href="testimonials.html" class="nav-link text-lg">Tarotscopes</a><a href="services.html" class="nav-link text-lg">Pages</a><a href="contact.html" class="nav-link text-lg">Contact</a>
+      <a href="tel:88005556677" class="text-gold font-semibold text-sm mt-4">8 (800) 555-66-77</a><a href="appointment.html" class="btn-begin text-center mt-2">Book Now</a>
+    </div>
+  </div>
+
+  <!-- SERVICE HERO -->
+  <section class="svc-hero">
+    <svg class="absolute opacity-10" width="500" height="500" viewBox="0 0 500 500" fill="none">
+      <circle cx="250" cy="250" r="230" stroke="#C89535" stroke-width="1"/>
+      <circle cx="250" cy="250" r="180" stroke="#C89535" stroke-width=".7"/>
+      <circle cx="250" cy="250" r="120" stroke="#C89535" stroke-width=".5"/>
+      <path d="M250 50 C250 50 140 150 140 250 C140 350 250 450 250 450 C250 450 360 350 360 250 C360 150 250 50 250 50Z" stroke="#C89535" stroke-width=".8" fill="none" opacity=".5"/>
+      <path d="M50 250 C50 250 150 140 250 140 C350 140 450 250 450 250 C450 250 350 360 250 360 C150 360 50 250 50 250Z" stroke="#C89535" stroke-width=".8" fill="none" opacity=".5"/>
+    </svg>
+    <div class="svc-hero-content">
+      <p class="text-gold text-xs font-bold uppercase tracking-widest mb-4">Our Services</p>
+      <h1 class="text-white questrial-regular text-4xl md:text-6xl mb-4 tracking-wide">Matrix Energetics</h1>
+      <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="services.html">Services</a><span>/</span><span class="text-white">Matrix Energetics</span></nav>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT + SIDEBAR -->
+  <section class="py-24 px-6 bg-cream">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+      <!-- Content (2/3) -->
+      <div class="lg:col-span-2">
+
+        <!-- Service intro -->
+        <div class="mb-12 reveal">
+          <!-- Icon -->
+          <div class="flex justify-center mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100" height="100" fill="none" stroke="#C89535" stroke-width="1.2">
+              <circle cx="60" cy="60" r="54"/><circle cx="60" cy="60" r="38"/><circle cx="60" cy="60" r="24"/>
+              <path d="M60 16 C60 16 42 36 42 60 C42 84 60 104 60 104 C60 104 78 84 78 60 C78 36 60 16 60 16Z" opacity=".6"/>
+              <path d="M16 60 C16 60 36 42 60 42 C84 42 104 60 104 60 C104 60 84 78 60 78 C36 78 16 60 16 60Z" opacity=".6"/>
+              <circle cx="60" cy="60" r="10" fill="#C89535" opacity=".3"/>
+            </svg>
+          </div>
+          <div class="prose">
+            <p class="text-lg text-darktext font-serif italic leading-relaxed mb-4">Matrix Energetics is a complete system of healing and transformation that uses the principles of quantum physics, subtle energy, and the power of consciousness to create profound, lasting change.</p>
+            <p>Developed by Dr. Richard Bartlett, Matrix Energetics is not a technique so much as a new way of perceiving reality. It works with the body's innate intelligence and uses two-point and other methods to collapse old patterns and introduce new possibilities at a quantum level.</p>
+            <p>Unlike conventional energy healing that focuses on moving or manipulating energy, Matrix Energetics teaches you to access a wave-like state of consciousness where anything is possible — where pain, limitation, and illness can dissolve and be replaced by new, expanded states of being.</p>
+          </div>
+        </div>
+
+        <!-- Feature boxes -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-14 reveal">
+          <div class="feature-box">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+            <div><p class="font-semibold text-darktext text-sm mb-1">Quantum Healing</p><p class="text-browntext text-xs leading-relaxed">Works at the quantum field level to dissolve pain, illness, and emotional blockages</p></div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div>
+            <div><p class="font-semibold text-darktext text-sm mb-1">Non-Invasive</p><p class="text-browntext text-xs leading-relaxed">Works through light touch or intention — no pressure, no manipulation, no discomfort</p></div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+            <div><p class="font-semibold text-darktext text-sm mb-1">Rapid Results</p><p class="text-browntext text-xs leading-relaxed">Many clients experience noticeable shifts during the very first session</p></div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg></div>
+            <div><p class="font-semibold text-darktext text-sm mb-1">Remote Sessions</p><p class="text-browntext text-xs leading-relaxed">Equally effective at a distance — book online from anywhere in the world</p></div>
+          </div>
+        </div>
+
+        <!-- What to expect -->
+        <div class="prose reveal">
+          <h2>What to Expect in a Session</h2>
+          <p>During a Matrix Energetics session, you'll be asked to stand or lie down comfortably. The practitioner will make light contact (or work remotely) and use a combination of intention, consciousness focus, and the two-point technique to create shifts in your field.</p>
+          <p>Many people experience spontaneous physical sensations such as warmth, tingling, a sense of wave-like movement, or a deep sense of relaxation and peace. Some experience emotional releases or sudden insights. Others notice changes in their physical body that occur gently and surprisingly quickly.</p>
+          <p>Sessions typically last 60 minutes and can address:</p>
+          <ul>
+            <li>Chronic pain, injury, or physical illness</li>
+            <li>Emotional trauma, anxiety, and depression</li>
+            <li>Limiting beliefs and mental patterns</li>
+            <li>Relationship and life transition challenges</li>
+            <li>Spiritual development and awakening</li>
+            <li>Stress, burnout, and exhaustion</li>
+          </ul>
+        </div>
+
+        <!-- Before / After section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 mb-14 reveal">
+          <div class="ba-col before">
+            <h3 class="font-serif text-xl text-darktext font-semibold mb-4">Before Matrix Energetics</h3>
+            <div class="flex flex-col gap-3">
+              <div class="flex gap-3 text-sm text-browntext"><span class="text-red-400 mt-0.5">✗</span>Persistent pain with no clear cause</div>
+              <div class="flex gap-3 text-sm text-browntext"><span class="text-red-400 mt-0.5">✗</span>Feeling stuck in repeating life patterns</div>
+              <div class="flex gap-3 text-sm text-browntext"><span class="text-red-400 mt-0.5">✗</span>Emotional heaviness and disconnection</div>
+              <div class="flex gap-3 text-sm text-browntext"><span class="text-red-400 mt-0.5">✗</span>Chronic fatigue and energy depletion</div>
+              <div class="flex gap-3 text-sm text-browntext"><span class="text-red-400 mt-0.5">✗</span>Anxiety and mental overwhelm</div>
+            </div>
+          </div>
+          <div class="ba-col after">
+            <h3 class="font-serif text-xl text-white font-semibold mb-4">After Matrix Energetics</h3>
+            <div class="flex flex-col gap-3">
+              <div class="flex gap-3 text-sm text-cream2"><span class="text-gold mt-0.5">✦</span>Rapid relief from physical pain and tension</div>
+              <div class="flex gap-3 text-sm text-cream2"><span class="text-gold mt-0.5">✦</span>Fresh perspective on life situations</div>
+              <div class="flex gap-3 text-sm text-cream2"><span class="text-gold mt-0.5">✦</span>Deep emotional release and lightness</div>
+              <div class="flex gap-3 text-sm text-cream2"><span class="text-gold mt-0.5">✦</span>Increased vitality and presence</div>
+              <div class="flex gap-3 text-sm text-cream2"><span class="text-gold mt-0.5">✦</span>A profound sense of peace and clarity</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonials -->
+        <h2 class="font-serif text-3xl text-darktext font-light mb-6 reveal">What Clients Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-14">
+          <div class="mini-card reveal" style="transition-delay:0s">
+            <div class="text-gold text-3xl font-serif mb-4 leading-none">"</div>
+            <p class="text-browntext text-sm leading-loose mb-5 italic">After just one Matrix Energetics session, a shoulder pain I'd had for six years literally dissolved during the session. I walked out completely different. I can't explain it, but I don't need to.</p>
+            <div class="flex items-center gap-3"><img src="testimonial_avery.png" alt="Avery" class="w-10 h-10 rounded-full object-cover border-2 border-gold/30"/><div><p class="font-serif text-darktext text-sm font-semibold">Avery Mia</p><p class="text-browntext text-xs uppercase tracking-widest">Los Angeles</p></div></div>
+          </div>
+          <div class="mini-card reveal" style="transition-delay:.1s">
+            <div class="text-gold text-3xl font-serif mb-4 leading-none">"</div>
+            <p class="text-browntext text-sm leading-loose mb-5 italic">I was sceptical at first, but the results were undeniable. Something shifted in my energy field that day that I've never been able to achieve with traditional therapy. I continue to book sessions every few months.</p>
+            <div class="flex items-center gap-3"><img src="testimonial_clara.png" alt="Clara" class="w-10 h-10 rounded-full object-cover border-2 border-gold/30"/><div><p class="font-serif text-darktext text-sm font-semibold">Clara Jenkins</p><p class="text-browntext text-xs uppercase tracking-widest">Paris</p></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sidebar (1/3) -->
+      <aside class="reveal-right">
+        <!-- Book CTA -->
+        <div class="bg-[#2D2B25] p-8 mb-5">
+          <svg class="mx-auto mb-5" viewBox="0 0 80 80" width="60" height="60" fill="none" stroke="#C89535" stroke-width="1.2">
+            <circle cx="40" cy="40" r="36"/><circle cx="40" cy="40" r="24"/>
+            <path d="M40 16 C40 16 30 28 30 40 C30 52 40 64 40 64 C40 64 50 52 50 40 C50 28 40 16 40 16Z" opacity=".6"/>
+            <path d="M16 40 C16 40 28 30 40 30 C52 30 64 40 64 40 C64 40 52 50 40 50 C28 50 16 40 16 40Z" opacity=".6"/>
+          </svg>
+          <h3 class="font-serif text-2xl text-white font-light mb-3 text-center">Book a Session</h3>
+          <p class="text-[#A89880] text-xs text-center leading-relaxed mb-6">Matrix Energetics sessions are available in-person or remotely. 60-minute session.</p>
+          <div class="text-center mb-6"><span class="font-cinzel text-3xl text-goldbtn">$95</span><span class="text-[#A89880] text-xs ml-2">/ 60 min</span></div>
+          <a href="appointment.html" class="block bg-goldbtn text-white text-center text-xs font-bold tracking-widest uppercase px-6 py-4 hover:bg-gold transition-colors mb-3">Book Now</a>
+          <a href="contact.html" class="block border border-[#C89535] text-gold text-center text-xs font-bold tracking-widest uppercase px-6 py-3 hover:bg-gold hover:text-white transition-colors">Ask a Question</a>
+        </div>
+
+        <!-- Session details -->
+        <div class="sidebar-widget">
+          <h4 class="font-serif text-xl text-darktext font-semibold mb-4">Session Details</h4>
+          <div class="flex flex-col gap-3 text-sm">
+            <div class="flex justify-between py-2 border-b border-cream2"><span class="text-browntext">Duration</span><span class="text-darktext font-semibold">60 minutes</span></div>
+            <div class="flex justify-between py-2 border-b border-cream2"><span class="text-browntext">Format</span><span class="text-darktext font-semibold">In-person / Remote</span></div>
+            <div class="flex justify-between py-2 border-b border-cream2"><span class="text-browntext">Follow-up</span><span class="text-darktext font-semibold">Email Q&A included</span></div>
+            <div class="flex justify-between py-2 border-b border-cream2"><span class="text-browntext">Preparation</span><span class="text-darktext font-semibold">None required</span></div>
+            <div class="flex justify-between py-2"><span class="text-browntext">Good for</span><span class="text-darktext font-semibold">All ages & conditions</span></div>
+          </div>
+        </div>
+
+        <!-- Related services -->
+        <div class="sidebar-widget">
+          <h4 class="font-serif text-xl text-darktext font-semibold mb-4">Related Services</h4>
+          <div class="flex flex-col gap-3">
+            <a href="service-detail.html" class="text-browntext text-sm hover:text-gold transition-colors flex items-center gap-2"><span class="text-gold">✦</span>Energy Healing</a>
+            <a href="service-detail.html" class="text-browntext text-sm hover:text-gold transition-colors flex items-center gap-2"><span class="text-gold">✦</span>Natal Chart Reading</a>
+            <a href="service-detail.html" class="text-browntext text-sm hover:text-gold transition-colors flex items-center gap-2"><span class="text-gold">✦</span>Person-Centred Counselling</a>
+            <a href="service-detail.html" class="text-browntext text-sm hover:text-gold transition-colors flex items-center gap-2"><span class="text-gold">✦</span>Healing Herbs Consultation</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="sidebar-widget">
+          <h4 class="font-serif text-xl text-darktext font-semibold mb-4">Have Questions?</h4>
+          <p class="text-browntext text-sm leading-relaxed mb-4">Curious whether Matrix Energetics is right for you? Get in touch — we're happy to help you choose the best path forward.</p>
+          <div class="flex items-center gap-3 mb-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg><a href="mailto:info@mystik.com" class="text-browntext text-sm hover:text-gold transition-colors">info@mystik.com</a></div>
+          <div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21L8.5 10.5a11.041 11.041 0 005 5l1.113-1.724a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2C7.716 21 3 16.284 3 5z"/></svg><a href="tel:88005556677" class="text-browntext text-sm hover:text-gold transition-colors">8 (800) 555-66-77</a></div>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="py-24 px-6 bg-cream2">
+    <div class="max-w-screen-xl mx-auto">
+      <div class="section-icon reveal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="60" height="30" fill="none" stroke="#C89535" stroke-width="1.5"><polygon points="15,15 30,2 45,15 30,28"/><polygon points="0,15 15,2 30,15 15,28"/><polygon points="30,15 45,2 60,15 45,28"/></svg></div>
+      <h2 class="font-serif text-4xl md:text-5xl text-darktext text-center font-light mb-14 reveal">Session Packages</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="price-card reveal" style="transition-delay:0s">
+          <p class="text-browntext text-xs uppercase tracking-widest mb-3">Introductory</p>
+          <h3 class="font-serif text-2xl text-darktext font-semibold mb-6">Single Session</h3>
+          <div class="price-amt font-cinzel text-4xl text-gold mb-6">$95</div>
+          <div class="flex flex-col gap-2 mb-8 text-sm text-browntext">
+            <div class="flex gap-2"><span class="text-gold">✦</span>60-minute session</div>
+            <div class="flex gap-2"><span class="text-gold">✦</span>Email follow-up included</div>
+            <div class="flex gap-2"><span class="text-gold">✦</span>In-person or remote</div>
+            <div class="flex gap-2 opacity-40"><span>✦</span>Session recording</div>
+            <div class="flex gap-2 opacity-40"><span>✦</span>Priority booking</div>
+          </div>
+          <a href="appointment.html" class="block border-2 border-gold text-gold text-xs font-bold tracking-widest uppercase px-6 py-3 hover:bg-gold hover:text-white transition-colors">Book Now</a>
+        </div>
+        <div class="price-card featured reveal" style="transition-delay:.1s">
+          <p class="text-cream2 text-xs uppercase tracking-widest mb-3">Most Popular</p>
+          <h3 class="font-serif text-2xl text-white font-semibold mb-6">3-Session Bundle</h3>
+          <div class="price-amt font-cinzel text-4xl text-goldbtn mb-6">$255</div>
+          <div class="flex flex-col gap-2 mb-8 text-sm text-cream2">
+            <div class="flex gap-2"><span class="text-gold">✦</span>3 × 60-minute sessions</div>
+            <div class="flex gap-2"><span class="text-gold">✦</span>Email follow-up included</div>
+            <div class="flex gap-2"><span class="text-gold">✦</span>In-person or remote</div>
+            <div class="flex gap-2"><span class="text-gold">✦</span>Session recording (audio)</div>
+            <div class="flex gap-2 opacity-50"><span>✦</span>Priority booking</div>
+          </div>
+          <a href="appointment.html" class="block bg-goldbtn border-2 border-goldbtn text-white text-xs font-bold tracking-widest uppercase px-6 py-3 hover:bg-gold hover:border-gold transition-colors">Book Bundle</a>
+        </div>
+        <div class="price-card reveal" style="transition-delay:.2s">
+          <p class="text-browntext text-xs uppercase tracking-widest mb-3">Deep Transformation</p>
+          <h3 class="font-serif text-2xl text-darktext font-semibold mb-6">6-Session Journey</h3>
+          <div class="price-amt font-cinzel text-4xl text-gold mb-6">$490</div>
+          <div class="flex flex-col gap-2 mb-8 text-sm text-browntext">
+            <div class="flex gap-2"><span class="text-gold">✦</span>6 × 60-minute sessions</div>
+            <div class="flex gap-2"><span class="text-gold">✦</span>Email follow-up included</div>
+            <div class="flex gap-2"><span class="text-gold">✦</span>In-person or remote</div>
+            <div class="flex gap-2"><span class="text-gold">✦</span>Session recordings</div>
+            <div class="flex gap-2"><span class="text-gold">✦</span>Priority booking access</div>
+          </div>
+          <a href="appointment.html" class="block border-2 border-gold text-gold text-xs font-bold tracking-widest uppercase px-6 py-3 hover:bg-gold hover:text-white transition-colors">Book Journey</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner py-28 px-6 text-center">
+    <div class="cta-content max-w-3xl mx-auto">
+      <h2 class="text-white font-serif text-4xl md:text-5xl font-light leading-tight mb-6 reveal">Begin Your Transformation Today</h2>
+      <p class="text-white text-sm max-w-xl mx-auto leading-loose mb-10 reveal opacity-90">Matrix Energetics meets you wherever you are. Whether you're new to energy healing or an experienced seeker, there is something unique waiting for you in this work.</p>
+      <a href="appointment.html" class="inline-block bg-goldbtn text-white text-xs font-bold tracking-widest uppercase px-12 py-5 hover:bg-gold transition-colors reveal">Book Your Session</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="py-16 px-6">
+    <div class="max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10">
+      <div><h4 class="footer-title">Quick Links</h4><a href="index.html" class="footer-link">Home</a><a href="astrology.html" class="footer-link">Astrology</a><a href="testimonials.html" class="footer-link">Testimonials</a><a href="services.html" class="footer-link">Our Services</a><a href="contact.html" class="footer-link">Contact</a></div>
+      <div><h4 class="footer-title">Our Services</h4><a href="#" class="footer-link">Birth Chart Reading</a><a href="#" class="footer-link">Tarot Readings</a><a href="service-detail.html" class="footer-link">Matrix Energetics</a><a href="#" class="footer-link">Solar Return</a><a href="#" class="footer-link">Energy Healing</a></div>
+      <div><h4 class="footer-title">Follow Us</h4><a href="#" class="footer-link">Facebook</a><a href="#" class="footer-link">X</a><a href="#" class="footer-link">Instagram</a><a href="#" class="footer-link">YouTube</a></div>
+      <div><h4 class="footer-title">Contact Us</h4><div class="flex items-center gap-3 mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg><a href="mailto:info@mystik.com" class="footer-link !mb-0">info@mystik.com</a></div><div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21L8.5 10.5a11.041 11.041 0 005 5l1.113-1.724a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2C7.716 21 3 16.284 3 5z"/></svg><span class="footer-link !mb-0">8 (800) 555-66-77</span></div></div>
+    </div>
+    <div class="mt-12 pt-6 border-t border-white/10 text-center"><p class="text-xs text-[#A89880]"><span class="text-gold font-semibold">ThemeREX</span> © 2026. All rights reserved.</p></div>
+  </footer>
+
+  <div class="side-panel hidden lg:flex">
+    <div class="side-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
+    <div class="side-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+    <div class="side-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+  </div>
+  <button class="back-top" id="back-top"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg></button>
+
+  <script>
+    const ham=document.getElementById('hamburger'),mMenu=document.getElementById('mobile-menu'),closeM=document.getElementById('close-menu');
+    ham.addEventListener('click',()=>mMenu.classList.add('open'));closeM.addEventListener('click',()=>mMenu.classList.remove('open'));
+    mMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mMenu.classList.remove('open')));
+    const header=document.getElementById('header');window.addEventListener('scroll',()=>header.classList.toggle('shadow-md',window.scrollY>20));
+    const backTop=document.getElementById('back-top');window.addEventListener('scroll',()=>backTop.classList.toggle('visible',window.scrollY>400));
+    backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    function obs(s){const o=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');o.unobserve(x.target);}});},{threshold:.1});document.querySelectorAll(s).forEach(el=>o.observe(el));}
+    obs('.reveal');obs('.reveal-left');obs('.reveal-right');
+  </script>
+</body>
+</html>
