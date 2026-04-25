@@ -73,22 +73,6 @@
       border-radius: 3px
     }
 
-    .logo-star::before {
-      content: '✦';
-      color: #C89535;
-      margin-right: 4px;
-      font-size: .7em;
-      vertical-align: middle
-    }
-
-    .logo-star::after {
-      content: '✦';
-      color: #C89535;
-      margin-left: 4px;
-      font-size: .7em;
-      vertical-align: middle
-    }
-
     .nav-link {
       font-family: 'Proza Libre', sans-serif;
       font-size: .72rem;
@@ -353,16 +337,6 @@
       transform: translateX(0)
     }
 
-    .side-panel {
-      position: fixed;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 50;
-      display: flex;
-      flex-direction: column
-    }
-
     .side-btn {
       width: 48px;
       height: 48px;
@@ -392,11 +366,10 @@
   <!-- HEADER -->
   <header id="header" class="sticky top-0 z-50 bg-cream border-b border-cream2 transition-shadow duration-300">
     <div class="px-6 flex items-center justify-between h-[88px]">
-      <a href="index.html" class="logo-star font-cinzel font-bold text-2xl tracking-wide text-darktext flex-shrink-0"
-        id="logo">
+      <a href="index.html" class=" font-cinzel font-bold text-2xl tracking-wide text-darktext flex-shrink-0" id="logo">
         <img src="./Images/Frame 188 (2).png" alt="logo" class="w-24">
       </a>
-      <nav class="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+      <nav class="hidden xl:flex items-center gap-7" aria-label="Main navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="astrology.html" class="nav-link">Astrology</a>
         <a href="appointment.html" class="nav-link">Appointments</a>
@@ -437,7 +410,7 @@
         <a href="testimonials.html" class="nav-link">Testimonials</a>
         <a href="contact.html" class="nav-link active">Contact</a>
       </nav>
-      <div class="hidden lg:flex items-center gap-5">
+      <div class="hidden xl:flex items-center gap-5">
         <a href="tel:88005556677"
           class="flex items-center gap-2 text-darktext hover:text-gold transition-colors duration-200"><svg
             xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24"
@@ -447,7 +420,7 @@
           </svg><span class="text-[0.72rem] font-semibold tracking-wide">8 (800) 555-66-77</span></a>
         <a href="#" class="btn-begin whitespace-nowrap" id="begin-btn">Begin Here</a>
       </div>
-      <button id="hamburger" class="lg:hidden p-2 text-darktext" aria-label="Open menu"><svg
+      <button id="hamburger" class="xl:hidden p-2 text-darktext" aria-label="Open menu"><svg
           xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
           stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -456,7 +429,7 @@
   </header>
 
   <!-- Mobile menu overlay -->
-  <div id="mobile-menu" class="fixed inset-y-0 left-0 w-72 bg-cream z-[100] shadow-2xl px-8 pt-24 pb-10 lg:hidden">
+  <div id="mobile-menu" class="fixed inset-y-0 left-0 w-72 bg-cream z-[100] shadow-2xl px-8 pt-24 pb-10 xl:hidden">
     <button id="close-menu" class="absolute top-5 right-5 text-darktext"><svg xmlns="http://www.w3.org/2000/svg"
         class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -678,63 +651,16 @@
         </svg>
       </div>
       <h2 class="font-serif text-4xl md:text-5xl text-darktext text-center font-light mb-3 reveal">Find Us</h2>
-      <p class="text-browntext text-sm text-center max-w-lg mx-auto mb-12 reveal leading-relaxed">Visit our studio in
+      <p class=" text-center max-w-lg mx-auto mb-12 reveal leading-relaxed">Visit our studio in
         the heart of Los Angeles for in-person sessions. Online readings are available worldwide.</p>
 
       <!-- SVG Map Placeholder -->
       <div class="map-container w-full h-[420px] reveal">
-        <svg viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-          <rect width="1200" height="420" fill="#E8E0C8" />
-          <!-- Grid lines (streets) -->
-          <g stroke="#D4C9A8" stroke-width="1" opacity="0.8">
-            <line x1="0" y1="70" x2="1200" y2="70" />
-            <line x1="0" y1="140" x2="1200" y2="140" />
-            <line x1="0" y1="210" x2="1200" y2="210" />
-            <line x1="0" y1="280" x2="1200" y2="280" />
-            <line x1="0" y1="350" x2="1200" y2="350" />
-            <line x1="100" y1="0" x2="100" y2="420" />
-            <line x1="220" y1="0" x2="220" y2="420" />
-            <line x1="360" y1="0" x2="360" y2="420" />
-            <line x1="500" y1="0" x2="500" y2="420" />
-            <line x1="650" y1="0" x2="650" y2="420" />
-            <line x1="800" y1="0" x2="800" y2="420" />
-            <line x1="950" y1="0" x2="950" y2="420" />
-            <line x1="1100" y1="0" x2="1100" y2="420" />
-          </g>
-          <!-- Main roads (thicker) -->
-          <g stroke="#C4B890" stroke-width="6" opacity="0.7">
-            <line x1="0" y1="210" x2="1200" y2="210" />
-            <line x1="600" y1="0" x2="600" y2="420" />
-          </g>
-          <!-- Block fills -->
-          <rect x="101" y="71" width="118" height="68" fill="#DDD8C0" rx="2" />
-          <rect x="221" y="71" width="138" height="68" fill="#D5D0B8" rx="2" />
-          <rect x="361" y="71" width="138" height="68" fill="#DDD8C0" rx="2" />
-          <rect x="651" y="141" width="148" height="68" fill="#D5D0B8" rx="2" />
-          <rect x="801" y="71" width="148" height="68" fill="#DDD8C0" rx="2" />
-          <rect x="101" y="281" width="118" height="68" fill="#D5D0B8" rx="2" />
-          <rect x="501" y="281" width="148" height="68" fill="#DDD8C0" rx="2" />
-          <rect x="801" y="281" width="148" height="68" fill="#D5D0B8" rx="2" />
-          <!-- Pin location -->
-          <g transform="translate(590,170)">
-            <circle cx="0" cy="0" r="28" fill="rgba(200,149,53,0.3)" />
-            <circle cx="0" cy="0" r="18" fill="#C89535" opacity="0.9" />
-            <circle cx="0" cy="0" r="8" fill="#fff" />
-            <!-- pulsing ring -->
-            <circle cx="0" cy="0" r="34" fill="none" stroke="#C89535" stroke-width="2" opacity="0.5" />
-          </g>
-          <!-- Label -->
-          <rect x="470" y="248" width="260" height="40" rx="4" fill="#2D2B25" opacity="0.88" />
-          <text x="600" y="273" text-anchor="middle" fill="#E8C06A" font-size="13" font-family="'Cinzel',serif"
-            letter-spacing="2">1234 CELESTIAL LANE, LA</text>
-          <!-- Compass -->
-          <g transform="translate(1150,40)">
-            <circle cx="0" cy="0" r="22" fill="rgba(245,240,225,0.9)" stroke="#C89535" stroke-width="1" />
-            <polygon points="0,-14 5,0 0,-5 -5,0" fill="#C89535" />
-            <polygon points="0,14 5,0 0,5 -5,0" fill="#9B7A3A" />
-            <text x="0" y="-18" text-anchor="middle" fill="#C89535" font-size="9" font-family="sans-serif">N</text>
-          </g>
-        </svg>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d141236.33590247293!2d72.73988483609043!3d21.15934029880327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e1!3m2!1sen!2sin!4v1777111139972!5m2!1sen!2sin"
+          style="border:0;" width="100%" height="420" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
   </section>
@@ -822,7 +748,16 @@
     const ham = document.getElementById('hamburger'), mMenu = document.getElementById('mobile-menu'), closeM = document.getElementById('close-menu');
     ham.addEventListener('click', () => mMenu.classList.add('open'));
     closeM.addEventListener('click', () => mMenu.classList.remove('open'));
-    mMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mMenu.classList.remove('open')));
+    mMenu.querySelectorAll('a:not([href="javascript:void(0)"])').forEach(a => a.addEventListener('click', () => mMenu.classList.remove('open')));
+    mMenu.querySelectorAll('a[href="javascript:void(0)"]').forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const submenu = toggle.nextElementSibling;
+        const icon = toggle.querySelector('svg');
+        if (submenu) submenu.classList.toggle('hidden');
+        if (icon) icon.classList.toggle('rotate-180');
+      });
+    });
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => header.classList.toggle('shadow-md', window.scrollY > 20));
     const backTop = document.getElementById('back-top');

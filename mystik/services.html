@@ -63,22 +63,6 @@
       border-radius: 3px
     }
 
-    .logo-star::before {
-      content: '✦';
-      color: #C89535;
-      margin-right: 4px;
-      font-size: .7em;
-      vertical-align: middle
-    }
-
-    .logo-star::after {
-      content: '✦';
-      color: #C89535;
-      margin-left: 4px;
-      font-size: .7em;
-      vertical-align: middle
-    }
-
     .nav-link {
       font-family: 'Proza Libre', sans-serif;
       font-size: .72rem;
@@ -351,16 +335,6 @@
       transform: translateX(0)
     }
 
-    .side-panel {
-      position: fixed;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 50;
-      display: flex;
-      flex-direction: column
-    }
-
     .side-btn {
       width: 48px;
       height: 48px;
@@ -394,7 +368,7 @@
         id="logo">
         <img src="./Images/Frame 188 (2).png" alt="logo" class="w-24">
       </a>
-      <nav class="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+      <nav class="hidden xl:flex items-center gap-6" aria-label="Main navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="astrology.html" class="nav-link">Astrology</a>
         <a href="appointment.html" class="nav-link">Appointments</a>
@@ -410,7 +384,8 @@
               class="px-5 py-3 text-[0.72rem] font-semibold text-darktext uppercase tracking-widest hover:text-gold hover:bg-cream2 transition-colors"
               style="font-family: 'Proza Libre', sans-serif;">Blogs</a><a href="blog-detail.html"
               class="px-5 py-3 text-[0.72rem] font-semibold text-darktext uppercase tracking-widest hover:text-gold hover:bg-cream2 transition-colors"
-              style="font-family: 'Proza Libre', sans-serif;">Blog Details</a></div>
+              style="font-family: 'Proza Libre', sans-serif;">Blog Details</a>
+          </div>
         </div>
         <div class="relative group"><a href="javascript:void(0)"
             class="nav-link flex items-center gap-1 cursor-pointer active">Services<svg
@@ -421,16 +396,17 @@
             </svg></a>
           <div
             class="absolute top-full left-0 mt-6 w-48 bg-white shadow-xl opacity-0 invisible translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50 border-t-2 border-gold flex flex-col py-2">
-            <a href="services.html"
+            <a href="#"
               class="px-5 py-3 text-[0.72rem] font-semibold text-darktext uppercase tracking-widest hover:text-gold hover:bg-cream2 transition-colors"
               style="font-family: 'Proza Libre', sans-serif;">Services</a><a href="service-detail.html"
               class="px-5 py-3 text-[0.72rem] font-semibold text-darktext uppercase tracking-widest hover:text-gold hover:bg-cream2 transition-colors"
-              style="font-family: 'Proza Libre', sans-serif;">Service Details</a></div>
+              style="font-family: 'Proza Libre', sans-serif;">Service Details</a>
+          </div>
         </div>
         <a href="testimonials.html" class="nav-link">Testimonials</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
-      <div class="hidden lg:flex items-center gap-5">
+      <div class="hidden xl:flex items-center gap-4">
         <a href="tel:88005556677"
           class="flex items-center gap-2 text-darktext hover:text-gold transition-colors duration-200"><svg
             xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24"
@@ -440,14 +416,16 @@
           </svg><span class="text-[0.72rem] font-semibold tracking-wide">8 (800) 555-66-77</span></a>
         <a href="#" class="btn-begin whitespace-nowrap" id="begin-btn">Begin Here</a>
       </div>
-      <button id="hamburger" class="lg:hidden p-2 text-darktext" aria-label="Open menu"><svg
+      <button id="hamburger" class="xl:hidden p-2 text-darktext" aria-label="Open menu"><svg
           xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
           stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg></button>
     </div>
   </header>
-  <div id="mobile-menu" class="fixed inset-y-0 left-0 w-72 bg-cream z-[100] shadow-2xl px-8 pt-24 pb-10 lg:hidden">
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu" class="fixed inset-y-0 left-0 w-72 bg-cream z-[100] shadow-2xl px-8 pt-24 pb-10 xl:hidden">
     <button id="close-menu" class="absolute top-5 right-5 text-darktext"><svg xmlns="http://www.w3.org/2000/svg"
         class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -482,6 +460,7 @@
     </div>
   </div>
 
+
   <!-- PAGE HERO -->
   <section class="page-hero">
     <svg class="absolute opacity-10" width="460" height="460" viewBox="0 0 460 460" fill="none">
@@ -509,8 +488,8 @@
       </div>
       <h2 class="font-serif text-4xl md:text-5xl text-darktext font-light mb-6 reveal">Healing for Body, Mind & Soul
       </h2>
-      <p class="text-browntext text-sm leading-loose reveal">Our curated range of services blends ancient cosmic wisdom
-        with modern healing techniques to support your journey towards wholeness. Whether you seek clarity through the
+      <p class="leading-loose reveal">Our curated range of services blends ancient cosmic wisdom
+        with modern healing techniques to support your journey towards wholeness. Whether you seek clarity through
         stars, release through energy work, or guidance through the cards, we have a modality tailored for you.</p>
     </div>
   </section>
@@ -717,10 +696,10 @@
           </svg>
         </div>
         <h2 class="font-serif text-4xl md:text-5xl text-darktext font-light leading-snug mb-6">How It Works</h2>
-        <p class="text-browntext text-sm leading-loose mb-4">Getting started with Mystik is simple. Choose a service,
+        <p class=" leading-loose mb-4">Getting started with Mystik is simple. Choose a service,
           book your session, and let the cosmic forces guide our work together. Every reading and healing is completely
           personalised to you.</p>
-        <p class="text-browntext text-sm leading-loose">All readings are delivered via email within 48–72 hours of
+        <p class=" leading-loose">All readings are delivered via email within 48–72 hours of
           booking, complete with audio or written report plus a follow-up Q&A email window to ensure you get full value
           from your session.</p>
         <a href="appointment.html"
@@ -732,7 +711,7 @@
           <div class="step-num font-cinzel">01</div>
           <div>
             <p class="font-semibold text-darktext text-sm mb-1">Choose Your Service</p>
-            <p class="text-browntext text-sm leading-relaxed">Browse our range of services and select the one that
+            <p class=" leading-relaxed">Browse our range of services and select the one that
               resonates with where you are in your journey right now.</p>
           </div>
         </div>
@@ -740,7 +719,7 @@
           <div class="step-num font-cinzel">02</div>
           <div>
             <p class="font-semibold text-darktext text-sm mb-1">Complete Your Booking</p>
-            <p class="text-browntext text-sm leading-relaxed">Submit your birth data, intention, and any questions you'd
+            <p class=" leading-relaxed">Submit your birth data, intention, and any questions you'd
               like addressed. Our secure booking form takes just 2 minutes.</p>
           </div>
         </div>
@@ -748,7 +727,7 @@
           <div class="step-num font-cinzel">03</div>
           <div>
             <p class="font-semibold text-darktext text-sm mb-1">Receive Your Reading</p>
-            <p class="text-browntext text-sm leading-relaxed">Your personalised reading or healing report is prepared
+            <p class=" leading-relaxed">Your personalised reading or healing report is prepared
               with care and delivered within the agreed timeframe.</p>
           </div>
         </div>
@@ -756,7 +735,7 @@
           <div class="step-num font-cinzel">04</div>
           <div>
             <p class="font-semibold text-darktext text-sm mb-1">Follow-Up Support</p>
-            <p class="text-browntext text-sm leading-relaxed">Every session includes a follow-up window to answer your
+            <p class=" leading-relaxed">Every session includes a follow-up window to answer your
               questions and ensure the guidance lands clearly for you.</p>
           </div>
         </div>
@@ -770,7 +749,7 @@
       <h2 class="text-white font-serif text-4xl md:text-6xl font-light leading-tight mb-6 reveal">
         Ready to Begin Your<br />Cosmic Journey?
       </h2>
-      <p class="text-white text-sm md:text-base max-w-2xl mx-auto leading-loose mb-10 reveal opacity-90">
+      <p class="text-white md:text-base max-w-2xl mx-auto leading-loose mb-10 reveal opacity-90">
         Book your first session today and take the first step toward clarity, healing, and alignment with your highest
         self.
       </p>
@@ -830,7 +809,16 @@
   <script>
     const ham = document.getElementById('hamburger'), mMenu = document.getElementById('mobile-menu'), closeM = document.getElementById('close-menu');
     ham.addEventListener('click', () => mMenu.classList.add('open')); closeM.addEventListener('click', () => mMenu.classList.remove('open'));
-    mMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mMenu.classList.remove('open')));
+    mMenu.querySelectorAll('a:not([href="javascript:void(0)"])').forEach(a => a.addEventListener('click', () => mMenu.classList.remove('open')));
+    mMenu.querySelectorAll('a[href="javascript:void(0)"]').forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const submenu = toggle.nextElementSibling;
+        const icon = toggle.querySelector('svg');
+        if (submenu) submenu.classList.toggle('hidden');
+        if (icon) icon.classList.toggle('rotate-180');
+      });
+    });
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => header.classList.toggle('shadow-md', window.scrollY > 20));
     const backTop = document.getElementById('back-top');

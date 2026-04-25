@@ -76,23 +76,6 @@
       border-radius: 3px;
     }
 
-    /* ── Logo decorative stars ── */
-    .logo-star::before {
-      content: '✦';
-      color: #C89535;
-      margin-right: 4px;
-      font-size: 0.7em;
-      vertical-align: middle;
-    }
-
-    .logo-star::after {
-      content: '✦';
-      color: #C89535;
-      margin-left: 4px;
-      font-size: 0.7em;
-      vertical-align: middle;
-    }
-
     /* ── Nav ── */
     .nav-link {
       font-family: 'Proza Libre', sans-serif;
@@ -409,17 +392,6 @@
       transform: translateX(0);
     }
 
-    /* ── Side panel ── */
-    .side-panel {
-      position: fixed;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 50;
-      display: flex;
-      flex-direction: column;
-    }
-
     .side-btn {
       width: 48px;
       height: 48px;
@@ -451,12 +423,12 @@
     <div class="px-6 flex items-center justify-between h-[88px]">
 
       <!-- Logo -->
-      <a href="#" class="logo-star font-cinzel font-bold text-2xl tracking-wide text-darktext flex-shrink-0" id="logo">
+      <a href="#" class="font-cinzel font-bold text-2xl tracking-wide text-darktext flex-shrink-0" id="logo">
         <img src="./Images/Frame 188 (2).png" alt="logo" class="w-24">
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+      <nav class="hidden xl:flex items-center gap-7" aria-label="Main navigation">
         <a href="#" class="nav-link ">Home</a>
         <a href="astrology.html" class="nav-link ">Astrology</a>
         <a href="appointment.html" class="nav-link ">Appointments</a>
@@ -510,7 +482,7 @@
       </nav>
 
       <!-- Phone + CTA -->
-      <div class="hidden lg:flex items-center gap-5">
+      <div class="hidden xl:flex items-center gap-5">
         <a href="tel:88005556677"
           class="flex items-center gap-2 text-darktext hover:text-gold transition-colors duration-200">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24"
@@ -524,7 +496,7 @@
       </div>
 
       <!-- Mobile hamburger -->
-      <button id="hamburger" class="lg:hidden p-2 text-darktext" aria-label="Open menu">
+      <button id="hamburger" class="xl:hidden p-2 text-darktext" aria-label="Open menu">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
           stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -534,7 +506,7 @@
   </header>
 
   <!-- Mobile menu overlay -->
-  <div id="mobile-menu" class="fixed inset-y-0 left-0 w-72 bg-cream z-[100] shadow-2xl px-8 pt-24 pb-10 lg:hidden">
+  <div id="mobile-menu" class="fixed inset-y-0 left-0 w-72 bg-cream z-[100] shadow-2xl px-8 pt-24 pb-10 xl:hidden">
     <button id="close-menu" class="absolute top-5 right-5 text-darktext">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
         stroke-width="2">

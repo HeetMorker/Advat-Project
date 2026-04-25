@@ -83,23 +83,6 @@
       border-radius: 3px;
     }
 
-    /* ── Logo stars ── */
-    .logo-star::before {
-      content: '✦';
-      color: #C89535;
-      margin-right: 4px;
-      font-size: 0.7em;
-      vertical-align: middle;
-    }
-
-    .logo-star::after {
-      content: '✦';
-      color: #C89535;
-      margin-left: 4px;
-      font-size: 0.7em;
-      vertical-align: middle;
-    }
-
     /* ── Nav ── */
     .nav-link {
       font-family: 'Proza Libre', sans-serif;
@@ -249,7 +232,6 @@
 
     .blog-card-img {
       overflow: hidden;
-      height: 220px;
     }
 
     .blog-card-img img {
@@ -478,17 +460,6 @@
       transform: translateX(0);
     }
 
-    /* ── Side panel ── */
-    .side-panel {
-      position: fixed;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 50;
-      display: flex;
-      flex-direction: column;
-    }
-
     .side-btn {
       width: 48px;
       height: 48px;
@@ -589,12 +560,12 @@
     <div class="px-6 flex items-center justify-between h-[88px]">
 
       <!-- Logo -->
-      <a href="#" class="logo-star font-cinzel font-bold text-2xl tracking-wide text-darktext flex-shrink-0" id="logo">
+      <a href="#" class="font-cinzel font-bold text-2xl tracking-wide text-darktext flex-shrink-0" id="logo">
         <img src="./Images/Frame 188 (2).png" alt="logo" class="w-24">
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+      <nav class="hidden xl:flex items-center gap-7" aria-label="Main navigation">
         <a href="index.html" class="nav-link ">Home</a>
         <a href="#" class="nav-link active">Astrology</a>
         <a href="appointment.html" class="nav-link ">Appointments</a>
@@ -648,7 +619,7 @@
       </nav>
 
       <!-- Phone + CTA -->
-      <div class="hidden lg:flex items-center gap-5">
+      <div class="hidden xl:flex items-center gap-5">
         <a href="tel:88005556677"
           class="flex items-center gap-2 text-darktext hover:text-gold transition-colors duration-200">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24"
@@ -662,7 +633,7 @@
       </div>
 
       <!-- Mobile hamburger -->
-      <button id="hamburger" class="lg:hidden p-2 text-darktext" aria-label="Open menu">
+      <button id="hamburger" class="xl:hidden p-2 text-darktext" aria-label="Open menu">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
           stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -672,7 +643,7 @@
   </header>
 
   <!-- Mobile menu overlay -->
-  <div id="mobile-menu" class="fixed inset-y-0 left-0 w-72 bg-cream z-[100] shadow-2xl px-8 pt-24 pb-10 lg:hidden">
+  <div id="mobile-menu" class="fixed inset-y-0 left-0 w-72 bg-cream z-[100] shadow-2xl px-8 pt-24 pb-10 xl:hidden">
     <button id="close-menu" class="absolute top-5 right-5 text-darktext">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
         stroke-width="2">
@@ -875,7 +846,7 @@
         <article class="blog-card reveal" style="transition-delay:0s">
           <div class="blog-card-img">
             <!-- SVG placeholder -->
-            <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+            <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" class="w-full ">
               <rect width="480" height="220" fill="#3a2412" />
               <circle cx="240" cy="110" r="80" fill="none" stroke="#C89535" stroke-width="1" opacity="0.4" />
               <circle cx="240" cy="110" r="55" fill="none" stroke="#C89535" stroke-width="0.8" opacity="0.3" />
@@ -904,7 +875,7 @@
         <!-- Card 2 -->
         <article class="blog-card reveal" style="transition-delay:0.1s">
           <div class="blog-card-img">
-            <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+            <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" class="w-full ">
               <defs>
                 <radialGradient id="bg2" cx="50%" cy="50%" r="50%">
                   <stop offset="0%" stop-color="#5c3a1e" />
@@ -938,7 +909,7 @@
         <!-- Card 3 -->
         <article class="blog-card reveal" style="transition-delay:0.2s">
           <div class="blog-card-img">
-            <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+            <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" class="w-full ">
               <rect width="480" height="220" fill="#1e1206" />
               <polygon points="240,30 340,180 140,180" fill="none" stroke="#C89535" stroke-width="1" opacity="0.5" />
               <polygon points="240,190 340,40 140,40" fill="none" stroke="#C89535" stroke-width="1" opacity="0.5" />
@@ -1418,29 +1389,6 @@
     </div>
   </footer>
 
-  <!-- ═══════════════════════════════════════ SIDE PANEL ═══════════════════════════════════════ -->
-  <div class="side-panel hidden lg:flex" aria-label="Quick actions">
-    <div class="side-btn" title="Cart">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
-        <line x1="3" y1="6" x2="21" y2="6" />
-        <path d="M16 10a4 4 0 01-8 0" />
-      </svg>
-    </div>
-    <div class="side-btn" title="Wishlist">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path
-          d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
-      </svg>
-    </div>
-    <div class="side-btn" title="Search">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="11" cy="11" r="8" />
-        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-      </svg>
-    </div>
-  </div>
-
   <!-- ═══════════════════════════════════════ BACK TO TOP ═══════════════════════════════════════ -->
   <button class="back-top" id="back-top" aria-label="Back to top">
     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24"
@@ -1457,7 +1405,16 @@
     const closeM = document.getElementById('close-menu');
     ham.addEventListener('click', () => mMenu.classList.add('open'));
     closeM.addEventListener('click', () => mMenu.classList.remove('open'));
-    mMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mMenu.classList.remove('open')));
+    mMenu.querySelectorAll('a:not([href="javascript:void(0)"])').forEach(a => a.addEventListener('click', () => mMenu.classList.remove('open')));
+    mMenu.querySelectorAll('a[href="javascript:void(0)"]').forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const submenu = toggle.nextElementSibling;
+        const icon = toggle.querySelector('svg');
+        if (submenu) submenu.classList.toggle('hidden');
+        if (icon) icon.classList.toggle('rotate-180');
+      });
+    });
 
     // ─── Header scroll shadow ──────────────────────────
     const header = document.getElementById('header');
